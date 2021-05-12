@@ -79,13 +79,11 @@ int main()
 
 			case 6: /** Suma digital **/
 				suma_digital();
-                printf (" Escribe el numero del que quieres hacer la suma");
                 printf("\n ------------------------------------\n");
 				break;
 			
 			case 7: /** Raiz digital **/
 				raiz_digital();
-                printf (" Escribe el numero del que quieres hacer la raiz");
                 printf("\n ------------------------------------\n");
 				break;
 	}
