@@ -1,7 +1,7 @@
 #include <stdio.h> 
 
 /* Incluimos el fichero de las cabezeras de los procedimientos */
-#include "include/headers.h"
+#include "../include/headers.h"
 
 
 /** SUMA DIGITAL **/ // (67891) = 6 + 7 + 8 + 9 + 1 = 31
@@ -28,14 +28,14 @@ void raiz_digital()
 {
     int num, resultado;
 
-    printf(" Escribe el numero del que quieres hacer la raiz");
+    printf(" Escribe el numero del que quieres hacer la raiz: ");
     scanf("%d", &num);
 
     /* Para la raiz digital aplicamos 2 veces la suma digital*/
     resultado = suma_rec(num);
     resultado = suma_rec(resultado);
 
-    printf(" La raiz digital de %d es: %d", num, resultado);
+    printf("\n La raiz digital de %d es: %d", num, resultado);
 }
 
 int raiz_rec(int n)

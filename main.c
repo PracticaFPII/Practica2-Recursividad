@@ -8,7 +8,7 @@
 #include <stdbool.h> 
 
 /* Incluimos el fichero de las cabezeras de los procedimientos */
-#include "headers.h"
+#include "include/headers.h"
 
 
 /** Programa principal **/
@@ -34,9 +34,9 @@ int main()
             printf(" [7] - Raiz digital\n");
 			printf(" [0] - Salir\n\n");
 
-			printf (" Escribe tu eleccion (el numero entre corchetes): \n");
+			printf (" Escribe tu eleccion (el numero entre corchetes): ");
 			scanf("%d", &opcion);
-			printf("\n------------------------------------\n");
+			printf("\n------------------------------------\n\n");
 		} while (opcion < 0 || opcion > 7);
 		
         /* Realizamos las opciones */
@@ -44,7 +44,6 @@ int main()
 		{	
 			case 0: /** SALIR **/
                 salir = true;
-                printf("\n ------------------------------------\n");
 				break;
 				
 			
@@ -66,13 +65,13 @@ int main()
 
 			
 			case 4: /** Movimientos Torres de Hanoi **/
-				torres_hanoi();
+				// torres_hanoi();
                 printf (" Escribe el numero de discos con los que quieres juagar (entre 3 y 10)");
                 printf("\n ------------------------------------\n");
 				break;
 			
 			case 5: /** Busqueda Dicotomica **/
-				busq_dicotomica();
+				// busq_dicotomica();
                 printf("\n ------------------------------------\n");
 				break;
 
@@ -85,6 +84,7 @@ int main()
 				raiz_digital();
                 printf("\n ------------------------------------\n");
 				break;
+		}
 	}
 	return 0; 
 } 
