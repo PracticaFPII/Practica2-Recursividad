@@ -13,8 +13,13 @@ void mcd()
     scanf("%d", &num1);
     printf(" Introduce el numero 2: ");
     scanf("%d", &num2);
+    
+    /* Pasamos a absoluto los numeros */
+    num1 = (num1<0)? 0 - num1: num1;
+    num2 = (num2<0)? 0 - num2: num2;
 
-    resultado = (num1 >= num2)? factorial_rec(num1, num2):factorial_rec(num2, num1);
+    /* Calculamos el mcd */
+    resultado = (num1 >= num2)? factorial_rec(num1, num2):factorial_rec(num2, num1); // Colocamos en la primera posicion el mayor y en la segunda el menor
 
 }
 
