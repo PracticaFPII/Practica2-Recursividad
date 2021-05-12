@@ -23,7 +23,7 @@ int suma_rec(int n)
 }
 
 
-/** RAIZ DIGITAL **/
+/** RAIZ DIGITAL **/ // (67891) = 6 + 7 + 8 + 9 + 1 = 31 -> 3 + 1 = 4 (2x Suma Digital)
 void raiz_digital()
 {
     int num, resultado;
