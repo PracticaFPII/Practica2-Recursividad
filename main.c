@@ -1,5 +1,5 @@
 /********************************************************************************
-*                        PRACTICA 2 - RECURSIVIDAD                              *
+*                        PRACTICA 2 - CALCULADORA                               *
 * POR CRISTIAN FERNANDEZ LOPEZ, DANIEL CLAVERO LAHERA, MASSIN LAAOUAJ MADROUNI  *
 *                                    FPII                                       *
 ********************************************************************************/
@@ -51,7 +51,6 @@ int main()
                 factorial();
                 printf("\n ------------------------------------\n");
 				break;
-
 			
 			case 2: /** Fibonacci **/
                 fibonacci();
@@ -62,11 +61,9 @@ int main()
 				mcd();
                 printf("\n ------------------------------------\n");
 				break;
-
 			
 			case 4: /** Movimientos Torres de Hanoi **/
 				// torres_hanoi();
-                printf (" Escribe el numero de discos con los que quieres juagar (entre 3 y 10)");
                 printf("\n ------------------------------------\n");
 				break;
 			

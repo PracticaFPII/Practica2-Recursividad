@@ -17,6 +17,8 @@ void suma_digital()
     printf(" La suma digital de %d es: %d", num, resultado);
 }
 
+
+/** Funcion Recursiva para realizar la suma y raiz digital **/
 int suma_rec(int n)
 {
     return n >= 10? n%10 + suma_rec(n/10): n;
@@ -38,7 +40,3 @@ void raiz_digital()
     printf("\n La raiz digital de %d es: %d", num, resultado);
 }
 
-int raiz_rec(int n)
-{
-    return /*...*/;
-}
