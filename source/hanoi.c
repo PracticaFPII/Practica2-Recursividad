@@ -6,3 +6,7 @@
 
 
 /** TORRES DE HANOI **/
+void torres_hanoi()
+{
+    //....
+}

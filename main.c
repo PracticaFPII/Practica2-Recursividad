@@ -32,7 +32,6 @@ int main()
             printf(" [5] - Busqueda Dicotomica\n");
             printf(" [6] - Suma digital\n");
             printf(" [7] - Raiz digital\n");
-			
 			printf(" [0] - Salir\n\n");
 
 			printf (" Escribe tu eleccion (el numero entre corchetes): \n");
