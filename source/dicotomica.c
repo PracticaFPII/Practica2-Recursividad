@@ -6,4 +6,7 @@
 
 
 /** BUSQUEDA DICOTOMICA **/
-
+void busqueda_dicotomica()
+{
+    
+}

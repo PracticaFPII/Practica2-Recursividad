@@ -27,7 +27,7 @@ void mov_torres();
 */
 
 
-void busq_dicotomica(); // BUSQUEDA DICOTOMICA
+void busqueda_dicotomica(); // BUSQUEDA DICOTOMICA
 bool cargar_fichero();
 int busq_rec(int n_buscar);
 
