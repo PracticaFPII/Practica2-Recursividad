@@ -9,29 +9,34 @@ void suma_digital()
 {
     int num, resultado;
 
-    printf (" Escribe el numero del que quieres hacer la suma: ");
+    printf(" Escribe el numero del que quieres hacer la suma: ");
     scanf("%d", &num);
 
     resultado = suma_rec(num);
+
+    printf(" La suma digital de %d es: %d", num, resultado);
 }
 
 int suma_rec(int n)
 {
-    return ;
+    return /*...*/;
 }
+
 
 /** RAIZ DIGITAL **/
 void raiz_digital()
 {
     int num, resultado;
 
-    printf (" Escribe el numero del que quieres hacer la raiz");
+    printf(" Escribe el numero del que quieres hacer la raiz");
     scanf("%d", &num);
 
     resultado = raiz_rec(num);
+
+    printf(" La raiz digital de %d es: %d", num, resultado);
 }
 
 int raiz_rec(int n)
 {
-    return ;
+    return /*...*/;
 }
