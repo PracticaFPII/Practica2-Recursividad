@@ -29,7 +29,7 @@ void mov_torres();
 
 void busqueda_dicotomica(); // BUSQUEDA DICOTOMICA
 bool cargar_fichero();
-int busq_rec(int n_buscar);
+int busqueda_rec(int n_buscar, int *posicion);
 
 
 void suma_digital();    // SUMA DIGITAL

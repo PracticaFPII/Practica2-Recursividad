@@ -19,7 +19,7 @@ void suma_digital()
 
 int suma_rec(int n)
 {
-    return /*...*/;
+    return n >= 10? n%10 + suma_rec(n/10): n;
 }
 
 
@@ -31,7 +31,9 @@ void raiz_digital()
     printf(" Escribe el numero del que quieres hacer la raiz");
     scanf("%d", &num);
 
-    resultado = raiz_rec(num);
+    /* Para la raiz digital aplicamos 2 veces la suma digital*/
+    resultado = suma_rec(num);
+    resultado = suma_rec(resultado);
 
     printf(" La raiz digital de %d es: %d", num, resultado);
 }
