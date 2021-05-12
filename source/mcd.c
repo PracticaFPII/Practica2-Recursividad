@@ -18,7 +18,7 @@ void mcd()
 
 }
 
-int mcd_rec(int n1, int n2)
+int mcd_rec(int n1, int n2) // calculamos el mcd de manera recursiva aplicando el algoritmo de euclides
 {
     return (n1%n2 == 0)? n2: mcd_rec(n2, n1%n2);
 }

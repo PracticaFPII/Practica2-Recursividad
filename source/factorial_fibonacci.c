@@ -19,10 +19,11 @@ void factorial()
     printf(" El factorial de %d es: %d\n", num, resultado);
 }
 
-unsigned long int factorial_rec(unsigned long int n)
+unsigned long int factorial_rec(unsigned long int n) // calculamos el factorial de manera recursiva
 {
     return n > 1? n * factorial_rec(n-1) : n;
 }
+
 
 /** FIBONACCI **/
 void fibonacci()
@@ -39,7 +40,7 @@ void fibonacci()
     printf(" El numero de la secuencia de fibonacci de %d es: %d\n", num, resultado);
 }
 
-unsigned long int fibonacci_rec(unsigned long int n)
+unsigned long int fibonacci_rec(unsigned long int n) // calculamos fibonacci de manera recursiva
 {
     return n > 1?  fibonacci_rec(n-1) + fibonacci_rec(n-2): n;
 }
