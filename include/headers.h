@@ -20,11 +20,9 @@ void mcd();         // MAXIMO COMUN DIVISOR
 int mcd_rec(int num1, int num2);
 
 
-/*
 void torres_hanoi();    // TORRES DE HANOI
-int torres_rec();
-void mov_torres();
-*/
+void mover_fichas (int num, int a, int b, int c);
+
 
 /*
 void busqueda_dicotomica(); // BUSQUEDA DICOTOMICA

@@ -5,6 +5,7 @@
 #include "../include/headers.h"
 
 #define MAX_TABLA 100
+#define NOM_FICHERO "tabla_dicotomica.txt"
 
 /** BUSQUEDA DICOTOMICA **/
 void busqueda_dicotomica()
@@ -19,7 +20,7 @@ void busqueda_dicotomica()
         printf(" Introduzca el numero a buscar:");
         scanf("%d", &num_buscado);
 
-        busqueda_rec(num_buscado, tabla, &posicion);
+        busqueda_rec(num_buscado, tabla, columnas, &posicion);
     
         //...
     }
@@ -28,16 +29,28 @@ void busqueda_dicotomica()
     }
 }
 
-bool cargar_fichero()
+bool cargar_fichero(int tabla[], int *columnas)
 {
     bool cargado = false;
+    int i = 0;
+    FILE *fichero;
 
-    //....
+    fichero = fopen(NOM_FICHERO, "r"); // Lo abrimos en formato de lectura para cargar los datos en una tabla
+    if (fichero != NULL){
+        cargado = true;
+
+        fscanf(fichero, "%d", tabla[i]);
+        while (!feof(fichero)){
+            i++;
+            fscanf(fichero, "%d", tabla[i]);
+        }
+        *columnas = i;
+    }
 
     return cargado;
 }
 
-int busqueda_rec(int num_buscado, int *posicion)
+int busqueda_rec(int num_buscado, int tabla[], int *posicion)
 {
-
+    return ;
 }

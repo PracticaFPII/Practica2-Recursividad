@@ -36,7 +36,7 @@ int main()
 
 			printf (" Escribe tu eleccion (el numero entre corchetes): ");
 			scanf("%d", &opcion);
-			printf("\n------------------------------------\n\n");
+			printf("\n ------------------------------------\n\n");
 		} while (opcion < 0 || opcion > 7);
 		
         /* Realizamos las opciones */
@@ -44,6 +44,8 @@ int main()
 		{	
 			case 0: /** SALIR **/
                 salir = true;
+				printf(" Gracias por utilizar el programa");
+				printf("\n ------------------------------------\n");
 				break;
 				
 			
@@ -63,7 +65,7 @@ int main()
 				break;
 			
 			case 4: /** Movimientos Torres de Hanoi **/
-				// torres_hanoi();
+				torres_hanoi();
                 printf("\n ------------------------------------\n");
 				break;
 			
