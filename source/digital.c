@@ -36,13 +36,12 @@ int suma_rec(int n)
 /** Funcion Iterativa **/
 int suma_ite (int n) 
 {
-    int  suma, cont = 0;
+    int  suma = 0;
 
-    while (cont<=10) { // Bucle para calcular la suma de los digitos
+    while (n>=10) { // Bucle para calcular la suma de los digitos
          suma += (n%10);
 
         n /= 10; // Quitar digitos del numero
-        cont++;
     }
 
     return suma;
