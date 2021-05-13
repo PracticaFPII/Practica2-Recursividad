@@ -24,11 +24,10 @@ void torres_hanoi();    // TORRES DE HANOI
 void mover_fichas (int num, int a, int b, int c);
 
 
-/*
 void busqueda_dicotomica(); // BUSQUEDA DICOTOMICA
-bool cargar_fichero();
-int busqueda_rec(int n_buscar, int *posicion);
-*/
+bool cargar_fichero(int tabla[], int *columnas);
+int busqueda_rec(int num_buscado, int tabla[], int columnas);
+
 
 void suma_digital();    // SUMA DIGITAL
 int suma_rec(int n);

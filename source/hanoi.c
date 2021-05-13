@@ -18,6 +18,7 @@ void torres_hanoi()
     mover_fichas(num, 1, 2, 3);
 }
 
+
 /** MOVER FICHAS: Función para mover las fichas de A a C **/
 void mover_fichas (int num, int a, int b, int c) {
 
@@ -30,8 +31,8 @@ void mover_fichas (int num, int a, int b, int c) {
     if (num >= 1) { // Comprobamos si no hay más discos, para indicar el final del juego.
         mover_fichas(num-1, a, c, b); // Mueve el disco general de A a la barra de destino (en este caso la columna de destino es B)
 
-        printf(" Mover el disco %d de la columna %d a la columna %d\n", num-1, a, b);
+        printf(" Mover el disco %d de la columna %d a la columna %d\n", num, a, c);
 
-        mover_fichas(num-1, c, b, a); // Mueve todo el disco de B a C con la columna auxiliar A
+        mover_fichas(num-1, b, a, c); // Mueve todo el disco de B a C con la columna auxiliar A
     }
 }

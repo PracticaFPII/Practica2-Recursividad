@@ -7,12 +7,21 @@
 /** SUMA DIGITAL **/ // (67891) = 6 + 7 + 8 + 9 + 1 = 31
 void suma_digital()
 {
-    int num, resultado;
+    int num, resultado, opcion;
 
     printf(" Escribe el numero del que quieres hacer la suma: ");
-    scanf("%d", &num);
+    scanf(" %d", &num);
 
-    resultado = suma_rec(num);
+    do {
+        printf("Desea realizar la suma en recursiva [0] o iterativa [1]");
+        scanf(" %d", &opcion);
+    } while (opcion<0 || opcion>1);
+
+    if (opcion == 0) {
+        resultado = suma_rec(num); // Llamada a la función, para realizar la suma Recursiva
+    } else {
+        resultado = suma_ite(num);  // Llamada a la función, para realizar la suma Iterativa
+    }
 
     printf(" La suma digital de %d es: %d", num, resultado);
 }
@@ -24,6 +33,20 @@ int suma_rec(int n)
     return n >= 10? n%10 + suma_rec(n/10): n;
 }
 
+/** Funcion Iterativa **/
+int suma_ite (int n) 
+{
+    int  suma, cont = 0;
+
+    while (cont<=10) { // Bucle para calcular la suma de los digitos
+         suma += (n%10);
+
+        n /= 10; // Quitar digitos del numero
+        cont++;
+    }
+
+    return suma;
+}
 
 /** RAIZ DIGITAL **/ // (67891) = 6 + 7 + 8 + 9 + 1 = 31 -> 3 + 1 = 4 (2x Suma Digital)
 void raiz_digital()
@@ -39,4 +62,5 @@ void raiz_digital()
 
     printf("\n La raiz digital de %d es: %d", num, resultado);
 }
+
 
