@@ -13,7 +13,7 @@ void suma_digital()
     scanf(" %d", &num);
 
     do {
-        printf("Desea realizar la suma en recursiva [0] o iterativa [1]");
+        printf(" Desea realizar la suma en recursiva [0] o iterativa [1]: ");
         scanf(" %d", &opcion);
     } while (opcion<0 || opcion>1);
 

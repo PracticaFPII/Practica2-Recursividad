@@ -47,7 +47,7 @@ bool cargar_fichero(int tabla[], int *columnas)
         cargado = true;
 
         fscanf(fichero, "%d", &tabla[i]);
-        while ( !feof(fichero) || i < 99){
+        while ( !feof(fichero) && i < 99){
             i++;
             fscanf(fichero, "%d", &tabla[i]);
         }

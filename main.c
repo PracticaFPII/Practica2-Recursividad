@@ -70,7 +70,7 @@ int main()
 				break;
 			
 			case 5: /** Busqueda Dicotomica **/
-				// busq_dicotomica();
+				busqueda_dicotomica();
                 printf("\n ------------------------------------\n");
 				break;
 
