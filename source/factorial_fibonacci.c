@@ -1,4 +1,4 @@
-#include <stdio.h> 
+#include <stdio.h>
 
 /* Incluimos el fichero de las cabezeras de los procedimientos */
 #include "../include/headers.h"
@@ -12,11 +12,11 @@ void factorial()
     do{  // No existe el factorial de numeros negativos
         printf (" Escribe el numero a factorizar (tiene que ser mayor o igual que 0): ");
         scanf("%I64u", &num);
-    } while (num < 0);
+        if(num >= 21){printf("\n El numero introducido produce overflow, repitelo con un numero entre 0 y 20\n\n");}
+    } while (num >= 21); // Se supera el limite del rango 2^64-1
 
     resultado = factorial_rec(num);
     printf(" El factorial de %I64u es: %I64u\n", num, resultado);
-    if (num>=21){printf(" Advertencia: El valor no es correcto, ha habido overflow\n");} // Se supera el limite del rango 2^64-1
 }
 
 unsigned long long factorial_rec(unsigned long long n) // calculamos el factorial de manera recursiva
@@ -33,12 +33,12 @@ void fibonacci()
     do{ // No es posible calcular un numero negativo de la secuencia de fibonacci
         printf (" Escribe el numero a calcular de fibonacci (tiene que ser mayor o igual que 0): ");
         scanf("%I64u", &num);
-    } while (num < 0);
+        if(num >= 94){printf("\n El numero introducido produce overflow, repitelo con un numero entre 0 y 93\n\n");}
+    } while (num >= 94); // Se supera el limite del rango 2^64-1
 
 
     resultado = fibonacci_rec(num);
     printf(" El numero de la secuencia de fibonacci de %I64u es: %I64u\n", num, resultado);
-    if (num>=94){printf(" Advertencia: El valor no es correcto, ha habido overflow\n");} // Se supera el limite del rango 2^64-1
 }
 
 unsigned long long fibonacci_rec(unsigned long long n) // calculamos fibonacci de manera recursiva
