@@ -28,7 +28,7 @@ void suma_digital()
         resultado = suma_ite(num);  // Llamada a la función, para realizar la suma Iterativa
     }
 
-    if (neg = 1){
+    if (neg == 1){
         num = -num; // Recuperamos el signo
         resultado = -resultado; // Le damos el valor negativo
     }
