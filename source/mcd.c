@@ -13,9 +13,16 @@ void mcd()
     scanf("%d", &num1);
     printf(" Introduce el numero 2: ");
     scanf("%d", &num2);
+    
 
     /* Calculamos el mcd */
-    resultado = (num1 >= num2)? mcd_rec(num1, num2) : mcd_rec(num2, num1); // Colocamos en la primera posicion el mayor y en la segunda el menor
+    if (num1==0 || num2==0){ // Si hay un numero 0 el mcd es el otro, el de 0 y 0 es 0
+        resultado = num1==0?  num2 : num1; // El resultado es el numero que no sea 0
+    }
+    else{
+        resultado = (num1 >= num2)? mcd_rec(num1, num2) : mcd_rec(num2, num1); // Colocamos en la primera posicion el mayor y en la segunda el menor
+    }
+    
 
     /* Se imprime el resultado */
     printf(" El maximo comun divisor de %d y %d es: %d\n", num1, num2, resultado);

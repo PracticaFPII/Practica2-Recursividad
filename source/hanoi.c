@@ -16,6 +16,8 @@ void torres_hanoi()
     } while (num<3 || num>10);
 
     mover_fichas(num, 1, 2, 3);
+    
+    printf("\n Se han realizado todos los movimientos\n");
 }
 
 
