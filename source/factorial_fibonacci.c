@@ -16,6 +16,7 @@ void factorial()
 
     resultado = factorial_rec(num);
     printf(" El factorial de %I64u es: %I64u\n", num, resultado);
+    if (num>=21){printf(" Advertencia: El valor no es correcto, ha habido overflow\n");} // Se supera el limite del rango 2^64-1
 }
 
 unsigned long long factorial_rec(unsigned long long n) // calculamos el factorial de manera recursiva
