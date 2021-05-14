@@ -4,8 +4,8 @@
 *                                    FPII                                       *
 ********************************************************************************/
 
-#include <stdio.h> 
-#include <stdbool.h> 
+#include <stdio.h>
+#include <stdbool.h>
 
 /** FUNCIONES **/
 void factorial();   // FACTORIAL
@@ -31,6 +31,7 @@ int busqueda_rec(int num_buscado, int tabla[], int columnas);
 
 void suma_digital();    // SUMA DIGITAL
 int suma_rec(int n);
+int suma_ite (int n);
 void raiz_digital();    // RAIZ DIGITAL
 
 

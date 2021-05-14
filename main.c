@@ -44,7 +44,7 @@ int main()
 		{	
 			case 0: /** SALIR **/
                 salir = true;
-				printf(" Gracias por utilizar el programa");
+				printf(" Gracias por utilizar el programa\n");
 				printf("\n ------------------------------------\n");
 				break;
 				

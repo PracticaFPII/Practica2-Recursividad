@@ -11,7 +11,7 @@ calculadora.exe : main.c source/factorial_fibonacci.c source/digital.c source/mc
 	
 
 #----------------------------------------------------------------------
-# otros make comando
+# otros comandos - CLEAN y DEBUG (con gdb)
 #----------------------------------------------------------------------
 clean : 
 	@echo Recuerda que esto no siempre es necesario antes de hacer un make

@@ -8,6 +8,7 @@ void mcd()
 {
     int num1, num2, resultado;
 
+    /* Pedimos numeros para calcular el maximo comun divisor*/
     printf(" Introduce el numero 1: ");
     scanf("%d", &num1);
     printf(" Introduce el numero 2: ");
@@ -16,10 +17,11 @@ void mcd()
     /* Calculamos el mcd */
     resultado = (num1 >= num2)? mcd_rec(num1, num2) : mcd_rec(num2, num1); // Colocamos en la primera posicion el mayor y en la segunda el menor
 
+    /* Se imprime el resultado */
     printf(" El maximo comun divisor de %d y %d es: %d\n", num1, num2, resultado);
 }
 
 int mcd_rec(int n1, int n2)  // Calculamos el mcd de manera recursiva aplicando el algoritmo de euclides
 {
-    return (n1%n2 == 0)? n2 : mcd_rec(n2, n1%n2);
+    return (n1%n2 == 0)? n2 : mcd_rec(n2, n1%n2); //Dividimos y si el resto es 0 el divisor es el mcd, si no, tomamos el cociente como denominador del divisor y repetimos
 }

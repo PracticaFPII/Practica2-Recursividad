@@ -38,7 +38,7 @@ int suma_ite (int n)
 {
     int  suma = 0;
 
-    while (n>=10) { // Bucle para calcular la suma de los digitos
+    while (n>0) { // Bucle para calcular la suma de los digitos
          suma += (n%10);
 
         n /= 10; // Quitar digitos del numero
