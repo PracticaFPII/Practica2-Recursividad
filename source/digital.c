@@ -65,13 +65,15 @@ void raiz_digital()
     int num, resultado;
     bool neg = false;
 
+    
+
+    printf(" Escribe el numero del que quieres hacer la raiz: ");
+    scanf("%d", &num);
+
     if (num < 0){ // Lo pasamos a absoluto
         num = -num;
         neg = true;
     } 
-
-    printf(" Escribe el numero del que quieres hacer la raiz: ");
-    scanf("%d", &num);
 
     /* Para la raiz digital aplicamos 2 veces la suma digital*/
     resultado = suma_rec(num);
