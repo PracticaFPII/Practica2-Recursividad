@@ -9,11 +9,11 @@
 
 /** FUNCIONES **/
 void factorial();   // FACTORIAL
-unsigned long int factorial_rec(unsigned long int n);
+unsigned long long factorial_rec(unsigned long long n);
 
 
 void fibonacci();   // FIBONACCI
-unsigned long int fibonacci_rec(unsigned long int n);
+unsigned long long fibonacci_rec(unsigned long long n);
 
 
 void mcd();         // MAXIMO COMUN DIVISOR
