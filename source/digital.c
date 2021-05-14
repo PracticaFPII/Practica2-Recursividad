@@ -7,10 +7,15 @@
 /** SUMA DIGITAL **/ // (67891) = 6 + 7 + 8 + 9 + 1 = 31
 void suma_digital()
 {
-    int num, resultado, opcion;
+    int num, resultado, opcion, neg = 0;
 
     printf(" Escribe el numero del que quieres hacer la suma: ");
     scanf(" %d", &num);
+    
+    if (num < 0){ // Lo pasamos a absoluto
+        num = -num;
+        neg = 1;
+    } 
 
     do {
         printf(" Desea realizar la suma en recursiva [0] o iterativa [1]: ");
@@ -23,6 +28,10 @@ void suma_digital()
         resultado = suma_ite(num);  // Llamada a la función, para realizar la suma Iterativa
     }
 
+    if (neg = 1){
+        num = -num; // Recuperamos el signo
+        resultado = -resultado; // Le damos el valor negativo
+    }
     printf(" La suma digital de %d es: %d", num, resultado);
 }
 
