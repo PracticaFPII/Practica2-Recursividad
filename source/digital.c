@@ -63,6 +63,12 @@ int suma_ite (int n)
 void raiz_digital()
 {
     int num, resultado;
+    bool neg = false;
+
+    if (num < 0){ // Lo pasamos a absoluto
+        num = -num;
+        neg = true;
+    } 
 
     printf(" Escribe el numero del que quieres hacer la raiz: ");
     scanf("%d", &num);
@@ -70,6 +76,11 @@ void raiz_digital()
     /* Para la raiz digital aplicamos 2 veces la suma digital*/
     resultado = suma_rec(num);
     resultado = suma_rec(resultado);
+
+    if (neg){
+        num = -num; // Recuperamos el signo
+        resultado = -resultado; // Le damos el valor negativo
+    }
 
     printf("\n La raiz digital de %d es: %d", num, resultado);
 }
