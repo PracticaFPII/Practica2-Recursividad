@@ -1,4 +1,5 @@
 #include <stdio.h> 
+#include <stdbool.h>
 
 /* Incluimos el fichero de las cabezeras de los procedimientos */
 #include "../include/headers.h"
@@ -7,14 +8,15 @@
 /** SUMA DIGITAL **/ // (67891) = 6 + 7 + 8 + 9 + 1 = 31
 void suma_digital()
 {
-    int num, resultado, opcion, neg = 0;
+    int num, resultado, opcion;
+    bool neg = false;
 
     printf(" Escribe el numero del que quieres hacer la suma: ");
     scanf(" %d", &num);
     
     if (num < 0){ // Lo pasamos a absoluto
         num = -num;
-        neg = 1;
+        neg = true;
     } 
 
     do {
@@ -28,10 +30,11 @@ void suma_digital()
         resultado = suma_ite(num);  // Llamada a la función, para realizar la suma Iterativa
     }
 
-    if (neg == 1){
+    if (neg){
         num = -num; // Recuperamos el signo
         resultado = -resultado; // Le damos el valor negativo
     }
+
     printf(" La suma digital de %d es: %d", num, resultado);
 }
 
