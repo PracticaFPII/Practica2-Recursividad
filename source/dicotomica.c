@@ -37,7 +37,7 @@ void busqueda_dicotomica()
         }
     }
     else{
-        printf(" El fichero a cargar no existe o esta vacio\n");
+        printf(" El fichero a cargar no existe\n");
     }
 }
 
