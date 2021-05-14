@@ -65,8 +65,6 @@ void raiz_digital()
     int num, resultado;
     bool neg = false;
 
-    
-
     printf(" Escribe el numero del que quieres hacer la raiz: ");
     scanf("%d", &num);
 
