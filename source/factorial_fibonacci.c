@@ -43,15 +43,16 @@ void fibonacci()
 
 unsigned long long fibonacci_rec(unsigned long long n) // calculamos fibonacci de manera recursiva
 {
-    static unsigned long long tabla[94]; //A partir del numero 94 hay overflow
+    static unsigned long long tabla[94]; //A partir del numero 94 hay overflow, la tabla se inicializa a 0
     unsigned long long resultado;
 
+    // Usamos una tabla para guardar los distintos fibonacci para evitar repeticiones
     if (tabla[n] != 0){
-        resultado = tabla[n];
+        resultado = tabla[n]; // Extraemos el resultado de la tabla auxiliar
     }
     else{
-        resultado = n > 1?  fibonacci_rec(n-1) + fibonacci_rec(n-2): n;
-        tabla[n] = resultado;
+        resultado = n > 1?  fibonacci_rec(n-1) + fibonacci_rec(n-2): n; // Calculamos fibonacci
+        tabla[n] = resultado; // Actualizamos la tabla auxiliar
     }
     return resultado;
 }
